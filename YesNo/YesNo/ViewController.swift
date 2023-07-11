@@ -15,8 +15,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        answerLabel.numberOfLines = 1
-        answerButton.layer.cornerRadius = 5
+        
+        answerButton.layer.cornerRadius = 10
     }
     
     @IBAction func answerButtonAction(_ sender: Any) {
@@ -27,5 +27,7 @@ class ViewController: UIViewController {
             self.answerLabel.text = answer ? "YES" : "NO"
         }
     }
+
 }
+
 
